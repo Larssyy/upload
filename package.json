@@ -1,0 +1,25 @@
+{
+  "name": "file-upload-app",
+  "version": "1.0.0",
+  "description": "A simple file upload application with basic content scanning using Netlify functions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'No build step required'",
+    "deploy": "netlify deploy"
+  },
+  "dependencies": {
+    "formidable": "^2.0.1", // Library for handling file uploads
+    "axios": "^1.4.0", // Optional: For making HTTP requests, if needed
+    "fs-extra": "^11.0.0", // For extended filesystem operations (optional)
+    "path": "^0.12.7" // Node.js path module
+  },
+  "devDependencies": {
+    "netlify-cli": "^14.0.0" // Netlify CLI for local development and deployment
+  },
+  "netlify": {
+    "functions": "netlify/functions" // Directory for Netlify functions
+  },
+  "author": "Larsy",
+  "license": "MIT"
+}
